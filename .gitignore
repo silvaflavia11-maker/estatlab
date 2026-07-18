@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+# artefatos do PyInstaller
+build/EstatLab/
+dist/
+*.spec
+# pacotes de distribuição (grandes; gerados sob demanda)
+distribuicao/
+# documentos internos da equipe (não publicar no repositório público)
+docs/

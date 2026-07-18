@@ -1,0 +1,39 @@
+# Metadados de citação — o GitHub exibe o botão "Cite this repository" e o
+# Zenodo importa estes dados no depósito.
+# PREENCHER ANTES DO RELEASE: orcid dos autores, affiliation, repository-code
+# (usuário do GitHub), date-released e, após o primeiro release, o doi.
+cff-version: 1.2.0
+message: >-
+  Se você usar o EstatLab em trabalho acadêmico, cite-o conforme os metadados
+  abaixo, juntamente com as bibliotecas de cálculo (SciPy, statsmodels etc.).
+type: software
+title: "EstatLab: aplicativo estatístico educacional"
+abstract: >-
+  Aplicativo desktop de análise estatística em português (PT-BR) para ensino
+  e uso acadêmico, com interpretação didática dos resultados. Cobre
+  estatística básica, testes de hipóteses, ANOVA, regressão, métodos não
+  paramétricos, tabelas de contingência, distribuições, poder e tamanho de
+  amostra, cartas de controle, capabilidade de processo, MSA, planejamento de
+  experimentos (DOE), séries temporais, análise multivariada e
+  confiabilidade. Os cálculos são realizados pelas bibliotecas científicas
+  SciPy, statsmodels, scikit-learn e lifelines.
+authors:
+  - family-names: Silva
+    given-names: Flávia
+    # orcid: "https://orcid.org/0000-0000-0000-0000"  # PREENCHER
+    # affiliation: "PREENCHER (instituição)"
+  # Acrescentar demais autores definidos pela equipe, na ordem acordada.
+version: 1.0.0
+# date-released: "2026-MM-DD"  # PREENCHER na data do release
+license: MIT
+# repository-code: "https://github.com/USUARIO/estatlab"  # PREENCHER
+# doi: 10.5281/zenodo.XXXXXXX  # PREENCHER após o primeiro release no Zenodo
+keywords:
+  - estatística
+  - educação
+  - análise de dados
+  - controle estatístico de processo
+  - planejamento de experimentos
+  - português
+  - PySide6
+  - Python

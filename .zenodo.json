@@ -1,0 +1,22 @@
+{
+  "title": "EstatLab: aplicativo estatístico educacional",
+  "description": "Aplicativo desktop de análise estatística em português (PT-BR) para ensino e uso acadêmico, com interpretação didática dos resultados. Cobre estatística básica, testes de hipóteses, ANOVA, regressão, métodos não paramétricos, tabelas de contingência, distribuições, poder e tamanho de amostra, cartas de controle, capabilidade de processo, MSA, planejamento de experimentos (DOE), séries temporais, análise multivariada e confiabilidade. Os cálculos são realizados pelas bibliotecas científicas SciPy, statsmodels, scikit-learn e lifelines, com validação numérica automatizada (147 testes).",
+  "upload_type": "software",
+  "license": "MIT",
+  "language": "por",
+  "creators": [
+    {
+      "name": "Silva, Flávia",
+      "affiliation": "PREENCHER (instituição)"
+    }
+  ],
+  "keywords": [
+    "estatística",
+    "educação",
+    "análise de dados",
+    "controle estatístico de processo",
+    "planejamento de experimentos",
+    "Python",
+    "PySide6"
+  ]
+}
