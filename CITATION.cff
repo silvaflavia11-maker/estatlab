@@ -1,7 +1,7 @@
 # Metadados de citação — o GitHub exibe o botão "Cite this repository" e o
 # Zenodo importa estes dados no depósito.
-# PREENCHER ANTES DO RELEASE: affiliation, repository-code (usuário do
-# GitHub), date-released e, após o primeiro release, o doi.
+# PREENCHER ANTES DO RELEASE: repository-code (usuário do GitHub),
+# date-released e, após o primeiro release, o doi.
 cff-version: 1.2.0
 message: >-
   Se você usar o EstatLab em trabalho acadêmico, cite-o conforme os metadados
@@ -21,8 +21,7 @@ authors:
   - family-names: Silva
     given-names: Flávia
     orcid: "https://orcid.org/0009-0009-8732-6903"
-    # affiliation: "PREENCHER (instituição)"
-  # Acrescentar demais autores definidos pela equipe, na ordem acordada.
+    affiliation: "Stora Enso Finland OY"
 version: 1.0.0
 # date-released: "2026-MM-DD"  # PREENCHER na data do release
 license: MIT
