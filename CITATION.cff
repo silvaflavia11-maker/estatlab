@@ -1,7 +1,6 @@
 # Metadados de citação — o GitHub exibe o botão "Cite this repository" e o
 # Zenodo importa estes dados no depósito.
-# PREENCHER ANTES DO RELEASE: repository-code (usuário do GitHub),
-# date-released e, após o primeiro release, o doi.
+# PREENCHER ANTES DO RELEASE: date-released; após o primeiro release, o doi.
 cff-version: 1.2.0
 message: >-
   Se você usar o EstatLab em trabalho acadêmico, cite-o conforme os metadados
@@ -25,7 +24,7 @@ authors:
 version: 1.0.0
 # date-released: "2026-MM-DD"  # PREENCHER na data do release
 license: MIT
-# repository-code: "https://github.com/USUARIO/estatlab"  # PREENCHER
+repository-code: "https://github.com/silvaflavia11-maker/estatlab"
 # doi: 10.5281/zenodo.XXXXXXX  # PREENCHER após o primeiro release no Zenodo
 keywords:
   - estatística
