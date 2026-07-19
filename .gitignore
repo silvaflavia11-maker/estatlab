@@ -11,3 +11,5 @@ dist/
 distribuicao/
 # documentos internos da equipe (não publicar no repositório público)
 docs/
+# registro no INPI (conterá dados pessoais; prova material local)
+INPI/
