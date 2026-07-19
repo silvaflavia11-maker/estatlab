@@ -1,0 +1,51 @@
+name: "🐛 Relatar um problema (bug)"
+description: "Algo deu errado, travou ou um resultado parece incorreto"
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: o-que-aconteceu
+    attributes:
+      label: O que aconteceu?
+      description: Descreva o problema em uma ou duas frases.
+      placeholder: "Ex.: ao rodar a ANOVA de 1 fator, o p-valor exibido não bate com o do Minitab."
+    validations:
+      required: true
+  - type: textarea
+    id: passos
+    attributes:
+      label: Passos para reproduzir
+      description: A sequência exata de cliques/menus, do início ao erro.
+      placeholder: |
+        1. Ajuda → Carregar dados de exemplo
+        2. ANOVA → ANOVA de 1 fator
+        3. Resposta: nota_prova2; Fator: turma; OK
+    validations:
+      required: true
+  - type: textarea
+    id: esperado
+    attributes:
+      label: Resultado obtido × resultado esperado
+      description: >
+        O que apareceu e o que deveria aparecer. Em divergência numérica,
+        informe a referência de comparação (livro, R, Minitab...) e o valor.
+    validations:
+      required: true
+  - type: input
+    id: ambiente
+    attributes:
+      label: Sistema e forma de execução
+      placeholder: "Ex.: Windows 11, rodando do código-fonte (Python 3.12) / macOS 15, EstatLab.app"
+    validations:
+      required: true
+  - type: textarea
+    id: dados
+    attributes:
+      label: Dados e capturas de tela (anexos)
+      description: >
+        Arraste para cá capturas de tela e, se possível, o projeto .estat
+        COMPACTADO EM .zip (o GitHub não aceita .estat diretamente).
+        ATENÇÃO: issues são públicas — use apenas dados que possam ser
+        divulgados (os dados de exemplo do app são ideais).
+    validations:
+      required: false

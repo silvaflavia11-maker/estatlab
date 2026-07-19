@@ -1,0 +1,20 @@
+name: "❓ Dúvida de uso"
+description: "Não encontro uma função, não sei qual análise usar ou como interpretar"
+title: "[DÚVIDA] "
+labels: ["question"]
+body:
+  - type: textarea
+    id: duvida
+    attributes:
+      label: Qual é a dúvida?
+      description: O que você está tentando fazer no EstatLab?
+      placeholder: "Ex.: quero comparar 3 turmas, uso ANOVA ou Kruskal-Wallis?"
+    validations:
+      required: true
+  - type: textarea
+    id: tentativas
+    attributes:
+      label: O que você já tentou?
+      description: Menus que abriu, análises que rodou, o que não funcionou.
+    validations:
+      required: false

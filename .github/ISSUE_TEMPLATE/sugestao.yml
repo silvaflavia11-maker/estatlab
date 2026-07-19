@@ -1,0 +1,20 @@
+name: "💡 Sugestão de melhoria"
+description: "Nova análise, opção que falta num diálogo ou melhoria didática"
+title: "[SUGESTÃO] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: sugestao
+    attributes:
+      label: O que você sugere?
+    validations:
+      required: true
+  - type: textarea
+    id: motivacao
+    attributes:
+      label: Em que situação isso ajudaria?
+      description: >
+        O caso de uso em aula ou análise que motivou a sugestão — ajuda a
+        priorizar e a desenhar a solução certa.
+    validations:
+      required: true
