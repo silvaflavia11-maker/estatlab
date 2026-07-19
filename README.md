@@ -1,10 +1,17 @@
 # EstatLab
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21435514.svg)](https://doi.org/10.5281/zenodo.21435514)
+[![CI](https://github.com/silvaflavia11-maker/estatlab/actions/workflows/ci.yml/badge.svg)](https://github.com/silvaflavia11-maker/estatlab/actions/workflows/ci.yml)
 
 Aplicativo desktop de análise estatística em português, para ensino e uso
-acadêmico. Multiplataforma (macOS e Windows). Distribuído sob licença MIT,
-sem garantia de suporte externo (projeto acadêmico).
+acadêmico. Multiplataforma (Windows, macOS e Linux). Distribuído sob licença
+MIT. *English summary [below](#english).*
+
+Toda análise produz, além dos números, uma **interpretação didática**:
+hipóteses por extenso, p-valor, decisão ao nível de significância escolhido
+e avisos de pressupostos. Dúvidas, bugs e sugestões: abra uma
+[issue](https://github.com/silvaflavia11-maker/estatlab/issues) — veja o
+[guia de contribuição](CONTRIBUTING.md).
 
 ## Como citar
 
@@ -155,3 +162,41 @@ distribuicao/   pacotes prontos para envio à equipe (zips)
   Windows (regenerar após mudanças no código: ver comando no histórico ou
   recriar com zip de app/, tests/, build/*.sh|bat, requirements.txt,
   pytest.ini e README.md)
+
+---
+
+## English
+
+**EstatLab** is an open-source desktop application for statistical analysis
+with a GUI entirely in Brazilian Portuguese, built for teaching and academic
+use. Every analysis outputs a *didactic interpretation* alongside the
+numbers: hypotheses in plain language, p-value, the decision at the chosen
+significance level, and assumption warnings. Coverage spans basic statistics,
+hypothesis tests, ANOVA, regression, nonparametrics, contingency tables,
+distributions, power and sample size, control charts, process capability,
+measurement systems analysis (Gage R&R), design of experiments, time series,
+multivariate methods and reliability/survival — with all numerical
+procedures delegated to SciPy, statsmodels, scikit-learn and lifelines, and
+validated by an automated suite of 147 tests.
+
+**Install & run (from source):**
+
+```bash
+git clone https://github.com/silvaflavia11-maker/estatlab.git
+cd estatlab
+python3 -m venv .venv
+./.venv/bin/pip install -r requirements.txt   # Windows: .venv\Scripts\pip
+./.venv/bin/python -m app.main                # Windows: .venv\Scripts\python
+```
+
+Try it: menu **Ajuda → Carregar dados de exemplo** loads sample datasets.
+
+**Tests:** `python -m pytest -q` (147 tests; set `QT_QPA_PLATFORM=offscreen`
+on headless systems).
+
+**How to cite:** see `CITATION.cff` or the DOI badge above — and please also
+cite the underlying scientific libraries.
+
+**Contributing / support:** see [CONTRIBUTING.md](CONTRIBUTING.md); open an
+[issue](https://github.com/silvaflavia11-maker/estatlab/issues) in Portuguese
+or English.
