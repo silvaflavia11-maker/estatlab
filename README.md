@@ -1,5 +1,7 @@
 # EstatLab
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21435514.svg)](https://doi.org/10.5281/zenodo.21435514)
+
 Aplicativo desktop de análise estatística em português, para ensino e uso
 acadêmico. Multiplataforma (macOS e Windows). Distribuído sob licença MIT,
 sem garantia de suporte externo (projeto acadêmico).
@@ -13,8 +15,7 @@ scikit-learn e lifelines —, conforme as recomendações de citação de cada
 projeto. Exemplo (APA):
 
 > Silva, F. (2026). *EstatLab: aplicativo estatístico educacional*
-> (Versão 1.0.0) [Software]. Zenodo. https://doi.org/10.5281/zenodo.XXXXXXX
-> *(DOI definitivo após o primeiro release)*
+> (Versão 1.0.0) [Software]. Zenodo. https://doi.org/10.5281/zenodo.21435514
 
 **Fase 1 implementada:** planilha de dados, estatística descritiva, testes de
 hipóteses (Z, t, proporções, variâncias, taxas de Poisson), correlação e

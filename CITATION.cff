@@ -1,6 +1,7 @@
 # Metadados de citação — o GitHub exibe o botão "Cite this repository" e o
 # Zenodo importa estes dados no depósito.
-# PREENCHER após o primeiro release: o campo doi.
+# doi abaixo = DOI desta versão (1.0.0). DOI conceito (sempre aponta para a
+# versão mais recente): 10.5281/zenodo.21435513
 cff-version: 1.2.0
 message: >-
   Se você usar o EstatLab em trabalho acadêmico, cite-o conforme os metadados
@@ -25,7 +26,7 @@ version: 1.0.0
 date-released: "2026-07-08"
 license: MIT
 repository-code: "https://github.com/silvaflavia11-maker/estatlab"
-# doi: 10.5281/zenodo.XXXXXXX  # PREENCHER após o primeiro release no Zenodo
+doi: 10.5281/zenodo.21435514
 keywords:
   - estatística
   - educação
