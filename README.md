@@ -112,21 +112,26 @@ clássicos publicados (ver `tests/test_core.py`).
 
 ## Empacotamento (executável)
 
-O PyInstaller não faz cross-compilation: gere o executável de cada sistema no
-próprio sistema.
+O PyInstaller não faz cross-compilation: cada executável é gerado no próprio
+sistema.
 
 ```bash
-# macOS
+# macOS (local)
 ./build/build_macos.sh
 
-# Windows (prompt de comando na pasta do projeto)
+# Windows (local, numa máquina Windows)
 build\build_windows.bat
 ```
 
+**Windows sem máquina Windows:** o workflow **Build Windows** (aba *Actions*
+do GitHub) gera o `EstatLab-Windows.zip` num runner Windows — roda
+automaticamente a cada release ou manualmente por *Run workflow*; baixe o
+artefato na página da execução.
+
 O executável fica em `dist/`. Na primeira execução, sistemas exibem um aviso
-de segurança para apps não assinados (Gatekeeper/SmartScreen) — como o uso é
-interno, basta autorizar: no macOS, clique com o botão direito → Abrir; no
-Windows, "Mais informações" → "Executar assim mesmo".
+de segurança para apps não assinados (Gatekeeper/SmartScreen): no macOS,
+clique com o botão direito → Abrir; no Windows, "Mais informações" →
+"Executar assim mesmo".
 
 ## Estrutura
 
@@ -138,30 +143,33 @@ app/reports/    formatação PT-BR e interpretação didática (HTML da sessão)
 app/ui/         janelas e diálogos (PySide6)
 app/i18n/       strings compartilhadas
 tests/          validação numérica + testes de fumaça da interface
-build/          scripts de empacotamento (macOS e Windows)
+paper/          artigo para o JOSS (paper.md + paper.bib)
+.github/        CI (testes em 3 SOs), build Windows e formulários de issue
+build/          scripts de empacotamento local (macOS e Windows)
 dist/           executável gerado (EstatLab.app) — recriado pelo build
-docs/           documentos do projeto (especificação, guias, detalhamento)
-distribuicao/   pacotes prontos para envio à equipe (zips)
+docs/           documentos do projeto (local, não versionado)
+distribuicao/   pacotes prontos para envio à equipe (local, não versionado)
 ```
 
 ## Documentos do projeto (pasta `docs/`, local — não versionada)
 
 - `prompt-app-estatistica.md` — especificação para desenvolvimento assistido
 - `Detalhamento-Tecnico-App-Estatistico-v0.2.docx` — detalhamento técnico
-  revisado pela equipe (escopo aprovado; requisito multiplataforma);
-  v0.1 arquivada na mesma pasta
+  aprovado pela equipe
 - `Guia-Rapido-EstatLab.docx` (e .pdf) — guia do usuário para a equipe de
   validação
-- `Instrucoes-Build-Windows-EstatLab.docx` — passo a passo para gerar o
-  executável do Windows (pendência em aberto)
+- `Guia-Issues-GitHub-EstatLab.docx` — como a equipe registra bugs e
+  sugestões via GitHub
+- `arquivo/` — documentos concluídos ou supersedidos (detalhamento v0.1,
+  instruções de build manual no Windows, checklist da publicação com DOI)
 
-## Distribuição (pasta `distribuicao/`)
+## Distribuição (pasta `distribuicao/`, local — não versionada)
 
-- `EstatLab-macOS.zip` — executável do macOS pronto para envio
-- `EstatLab-codigo-fonte.zip` — código mínimo para gerar o executável do
-  Windows (regenerar após mudanças no código: ver comando no histórico ou
-  recriar com zip de app/, tests/, build/*.sh|bat, requirements.txt,
-  pytest.ini e README.md)
+- `EstatLab-macOS.zip` — executável do macOS pronto para envio à equipe
+- Executável do Windows: gerar pelo workflow **Build Windows** na aba
+  Actions do GitHub (artefato `EstatLab-Windows.zip`)
+- Código-fonte: o repositório público https://github.com/silvaflavia11-maker/estatlab
+  substituiu o antigo zip de código
 
 ---
 
